@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  dns-armor-soc:
+    build: .
+    container_name: dns_tunnel_detector
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_ENABLE_CORS=false
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
