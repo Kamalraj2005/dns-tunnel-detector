@@ -1,0 +1,22 @@
+# Python Virtual Environment & Caches
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.bak
+test_pcap_debug.py
+test_pcapng.py
